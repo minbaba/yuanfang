@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A329r" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDYLoadView">
+            <connections>
+                <outlet property="imageView" destination="6Gs-fY-QHa" id="Ylv-YH-hbz"/>
+                <outlet property="refrehBtn" destination="xvP-DG-TJV" id="LhV-Cj-DF7"/>
+                <outlet property="view" destination="iN0-l3-epB" id="8XY-VA-Hbj"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xvP-DG-TJV">
+                    <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="150" id="4GV-IZ-BAe"/>
+                        <constraint firstAttribute="height" constant="150" id="KJx-Ta-7Lh"/>
+                    </constraints>
+                    <state key="normal" backgroundImage="refresh">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="4GV-IZ-BAe"/>
+                            <exclude reference="KJx-Ta-7Lh"/>
+                        </mask>
+                    </variation>
+                    <variation key="widthClass=compact">
+                        <mask key="constraints">
+                            <include reference="4GV-IZ-BAe"/>
+                            <include reference="KJx-Ta-7Lh"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="refreshBtnClicked:" destination="-1" eventType="touchUpInside" id="fyO-KS-ycV"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6Gs-fY-QHa">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="6Gs-fY-QHa" firstAttribute="width" secondItem="xvP-DG-TJV" secondAttribute="width" id="Ier-rZ-EtS"/>
+                <constraint firstAttribute="centerY" secondItem="xvP-DG-TJV" secondAttribute="centerY" id="MMH-BL-be1"/>
+                <constraint firstItem="6Gs-fY-QHa" firstAttribute="height" secondItem="xvP-DG-TJV" secondAttribute="height" id="RjS-R7-nTd"/>
+                <constraint firstItem="6Gs-fY-QHa" firstAttribute="centerX" secondItem="xvP-DG-TJV" secondAttribute="centerX" id="dyz-QR-P27"/>
+                <constraint firstItem="6Gs-fY-QHa" firstAttribute="centerY" secondItem="xvP-DG-TJV" secondAttribute="centerY" id="oca-4q-UJh"/>
+                <constraint firstAttribute="centerX" secondItem="xvP-DG-TJV" secondAttribute="centerX" id="u4U-Tw-RED"/>
+            </constraints>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="xvP-DG-TJV"/>
+                    <exclude reference="6Gs-fY-QHa"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="Ier-rZ-EtS"/>
+                    <exclude reference="RjS-R7-nTd"/>
+                    <exclude reference="dyz-QR-P27"/>
+                    <exclude reference="oca-4q-UJh"/>
+                    <exclude reference="MMH-BL-be1"/>
+                    <exclude reference="u4U-Tw-RED"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="xvP-DG-TJV"/>
+                    <include reference="6Gs-fY-QHa"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="Ier-rZ-EtS"/>
+                    <include reference="RjS-R7-nTd"/>
+                    <include reference="dyz-QR-P27"/>
+                    <include reference="oca-4q-UJh"/>
+                    <include reference="MMH-BL-be1"/>
+                    <include reference="u4U-Tw-RED"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+    <resources>
+        <image name="refresh" width="419" height="421"/>
+    </resources>
+</document>

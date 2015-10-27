@@ -7,17 +7,28 @@
 //
 
 #import "AppDelegate.h"
+#import "MDYCriticViewController.h"
+#import "MDYNavigationController.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+
+}
 
 @end
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    
+    self.window.backgroundColor = [UIColor lightGrayColor];
+    [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [MDYCriticViewController sharedCriticViewController].nvc;
+    
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

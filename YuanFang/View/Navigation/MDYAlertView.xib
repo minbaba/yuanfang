@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14A329r" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MDYAlertView">
+            <connections>
+                <outlet property="textLabel" destination="HVn-C6-wF4" id="8VU-R1-vTd"/>
+                <outlet property="view" destination="iN0-l3-epB" id="kfP-b3-TQT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HVn-C6-wF4">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="HVn-C6-wF4" secondAttribute="trailing" constant="313" id="MBC-MR-WsF">
+                    <variation key="widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="HVn-C6-wF4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="45" id="VMj-FT-20Q">
+                    <variation key="widthClass=compact" constant="20"/>
+                </constraint>
+                <constraint firstItem="HVn-C6-wF4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="30" id="cni-D2-4fs">
+                    <variation key="widthClass=compact" constant="20"/>
+                </constraint>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="HVn-C6-wF4"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="MBC-MR-WsF"/>
+                    <exclude reference="VMj-FT-20Q"/>
+                    <exclude reference="cni-D2-4fs"/>
+                </mask>
+            </variation>
+            <variation key="widthClass=compact">
+                <mask key="subviews">
+                    <include reference="HVn-C6-wF4"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="MBC-MR-WsF"/>
+                    <include reference="VMj-FT-20Q"/>
+                    <include reference="cni-D2-4fs"/>
+                </mask>
+            </variation>
+        </view>
+    </objects>
+</document>
